@@ -31,7 +31,7 @@ export default function Home() {
               Nova Conta
             </h1>
 
-            <a href="#" className='px-6 py-2 border bg-[rgba(0,0,0,0.2] w-full text-center rounded-lg bg-[#F5F5F5] font-semibold text-base shadow-md mb-12 hover:bg-slate-100'>
+            <a href="#" className='px-6 py-2 border bg-[rgba(0,0,0,0.2] w-full text-center rounded-lg bg-[#F5F5F5] font-semibold text-base shadow-md mb-12 hover:bg-slate-100 transition-colors'>
               Crie sua conta com o <span className='font-bold'>Google</span>
             </a>
             <div className='flex text-center'>
@@ -78,7 +78,7 @@ export default function Home() {
                 </a>
               </label>
 
-              <button type='submit' className='block text-center w-full px-6 py-4 bg-green-600 rounded-lg text-white font-bold hover:bg-green-900'>
+              <button type='submit' className='block text-center w-full px-6 py-4 bg-green-600 rounded-lg text-white font-bold hover:bg-green-900 transition-colors'>
                 Criar Conta
               </button>
             </form>
@@ -98,7 +98,7 @@ export default function Home() {
               Entrar
             </h1>
 
-            <a href="#" className='px-6 py-2 border bg-[rgba(0,0,0,0.2] w-full text-center rounded-lg bg-[#F5F5F5] font-semibold text-base shadow-md mb-12 hover:bg-slate-100'>
+            <a href="#" className='px-6 py-2 border bg-[rgba(0,0,0,0.2] w-full text-center rounded-lg bg-[#F5F5F5] font-semibold text-base shadow-md mb-12 hover:bg-slate-100 transition-colors'>
               Entre com sua conta <span className='font-bold'>Google</span>
             </a>
             <div className='flex text-center'>
@@ -128,8 +128,8 @@ export default function Home() {
               </label>
               <input type="password" name="password" placeholder='**********' className='w-full border border-[#C1C1C1] px-4 py-3 rounded-lg mt-2 mb-5' value={enterPassword} onChange={e => setEnterPassword(e.target.value)} required></input>
 
-              <button type='submit' className='block text-center w-full px-6 py-4 bg-green-600 rounded-lg text-white font-bold hover:bg-green-900'>
-                Criar Conta
+              <button type='submit' className='block text-center w-full px-6 py-4 bg-green-600 rounded-lg text-white font-bold hover:bg-green-900 transition-colors'>
+                Entrar
               </button>
             </form>
             <p className='mb-5'>
