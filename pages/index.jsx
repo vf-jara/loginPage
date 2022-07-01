@@ -12,6 +12,7 @@ export default function Home() {
   const [enterPassword, setEnterPassword] = useState("")
 
 
+
   return (
     <div className="">
       <Head>
@@ -45,17 +46,17 @@ export default function Home() {
 
             <form className='w-full mb-8 lg:mb-16'>
 
-              <label for="name" className='block font-bold'>
+              <label htmlFor="name" className='block font-bold'>
                 Nome Completo
               </label>
               <input type="text" name="name" placeholder='Seu nome aqui' className='w-full border border-[#C1C1C1] px-4 py-3 rounded-lg mt-2 mb-5' value={name} onChange={e => setName(e.target.value)} required></input>
 
-              <label for="phone" className='block font-bold'>
+              <label htmlFor="phone" className='block font-bold'>
                 Telefone
               </label>
               <input type="tel" name="phone" placeholder='(DDD) 9 9999-9999' className='w-full border border-[#C1C1C1] px-4 py-3 rounded-lg mt-2 mb-5' value={phone} onChange={e => setPhone(e.target.value)} required></input>
 
-              <label for="mail" className='block font-bold'>
+              <label htmlFor="mail" className='block font-bold'>
                 E-mail
               </label>
               <input type="mail" name="mail" placeholder='email@email.com' className='w-full border border-[#C1C1C1] px-4 py-3 rounded-lg mt-2 mb-5' value={mail} onChange={e => setMail(e.target.value)} required></input>
@@ -64,13 +65,13 @@ export default function Home() {
                 <a href="#" className='text-blue-700 underline'>Esqueceu sua senha?</a>
               </div>
 
-              <label for="password" className='block font-bold'>
+              <label htmlFor="password" className='block font-bold'>
                 Senha
               </label>
               <input type="password" name="password" placeholder='**********' className='w-full border border-[#C1C1C1] px-4 py-3 rounded-lg mt-2 mb-5' value={password} onChange={e => setPassword(e.target.value)}></input>
 
               <input type="checkbox" name="check" className='mr-2 mb-8' />
-              <label for="check" className=''>
+              <label htmlFor="check" className=''>
                 Eu aceito os ‎
                 <a href="#" className='text-blue-700 underline'>
                   Termos & Condições de uso
@@ -83,9 +84,9 @@ export default function Home() {
             </form>
             <p className='mb-5'>
               Já tem uma conta? ‎
-              <a href="" className='text-blue-700 underline' onClick={() => setStatus(!status)}>
+              <button href="" className='text-blue-700 underline' onClick={() => setStatus(!status)}>
                 Entre aqui
-              </a>
+              </button>
             </p>
           </div>)
 
@@ -113,7 +114,7 @@ export default function Home() {
             <form className='w-full mb-8 lg:mb-16'>
 
 
-              <label for="mail" className='block font-bold'>
+              <label htmlFor="mail" className='block font-bold'>
                 E-mail
               </label>
               <input type="mail" name="mail" placeholder='email@email.com' className='w-full border border-[#C1C1C1] px-4 py-3 rounded-lg mt-2 mb-5' value={enterMail} onChange={e => setEnterMail(e.target.value)} required></input>
@@ -122,7 +123,7 @@ export default function Home() {
                 <a href="#" className='text-blue-700 underline'>Esqueceu sua senha?</a>
               </div>
 
-              <label for="password" className='block font-bold'>
+              <label htmlFor="password" className='block font-bold'>
                 Senha
               </label>
               <input type="password" name="password" placeholder='**********' className='w-full border border-[#C1C1C1] px-4 py-3 rounded-lg mt-2 mb-5' value={enterPassword} onChange={e => setEnterPassword(e.target.value)} required></input>
@@ -133,11 +134,12 @@ export default function Home() {
             </form>
             <p className='mb-5'>
               Novo por aqui? ‎
-              <a href="" className='text-blue-700 underline' onClick={() => setStatus(status)}>
+              <button href="" className='text-blue-700 underline' onClick={() => setStatus(!status)}>
                 Crie sua conta agora!
-              </a>
+              </button>
             </p>
           </div>)
+
         }
       </main>
 
